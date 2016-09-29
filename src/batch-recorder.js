@@ -52,7 +52,7 @@ var BatchRecorder = function () {
     value: function _writeSpan(id) {
       var spanToWrite = this.partialSpans.get(id);
       // ready for garbage collection
-      this.partialSpans.delete(id);
+      this.partialSpans.remove(id);
       this.logger.logSpan(spanToWrite);
     }
   }, {
