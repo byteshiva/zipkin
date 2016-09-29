@@ -8,6 +8,10 @@
 var thrift = require('thrift');
 var Thrift = thrift.Thrift;
 var Q = thrift.Q;
+var Endpoint;
+var Annotation;
+var BinaryAnnotation;
+var Span;
 
 var ttypes = module.exports = {};
 ttypes.AnnotationType = {
